@@ -104,9 +104,9 @@ print("c2 =", pow(flag, e2, n))
 ## Cách giải
 > Đây là cuộc tấn công khi hệ thống sử dựng chung Modulus n
 
-> Đầu tiên, ta tính u và v sao cho e1*u +e2*v = 1
+> Đầu tiên, ta tính u và v sao cho e1 * u + e2 * v = 1
 
-> Tiếp đó ta tính m = (c1**u * c2**v) mod n. Nhưng có 1 lưu ý là máy tính sẽ không thể tính số mũ âm. Để khắc phục, ta sẽ tìm nghịch đảo của c1 (hoặc c2) rồi nhân với -u (hoặc -v)
+> Tiếp đó ta tính m = (c1^u * c2^v) mod n. Nhưng có 1 lưu ý là máy tính sẽ không thể tính số mũ âm. Để khắc phục, ta sẽ tìm nghịch đảo của c1 (hoặc c2) rồi nhân với -u (hoặc -v)
 ```py
 from Crypto.Util.number import getPrime, long_to_bytes, bytes_to_long
 from gmpy2 import *
