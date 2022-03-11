@@ -231,7 +231,7 @@ print(a1)
 
 > Tính toán với từng cặp số (c,n), ta được 3 số m1,m2,m3
 
-> Tìm căn bậc 3 của m1*m2*m3, ta có flag
+> Tìm căn bậc 3 của m1 * m2 * m3, ta có flag
 ```py
 from Crypto.Util.number import long_to_bytes
 import gmpy2
