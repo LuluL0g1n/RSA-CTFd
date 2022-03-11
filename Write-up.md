@@ -67,6 +67,7 @@ print(long_to_bytes(pow(c,d,n)))
 
 ## Cách giải
 >Đưa n lên alpetron
+
 >Dễ dàng tìm được phi = 9535271629301589525422576327693640998475630016999686925425224437013127985147802319031537598149797844942164796406426778044571228816186195955328110080000
 ```python
 from Crypto.Util.number import long_to_bytes
@@ -217,7 +218,9 @@ print(long_to_bytes(gmpy2.iroot(M,3)[0]))
 
 ## Cách giải
 > Áp dụng code tương tự bài 6, nhưng chỉ ra một dãy kí tự vô nghĩa
+
 > Kiểm tra các số n, phát hiện chúng không nguyên tố cùng nhau, nên không thể sử dụng định lý CRT
+
 > Bài toán chuyển thành việc tính toán 2 số p q đơn thuần cho từng n
 ```py
 import gmpy2
@@ -225,7 +228,9 @@ a1,u1,v1 = gmpy2.gcdext(n1,n2)
 print(a1)
 ```
 > Dùng code trên tính được 3 số, hợp thành 3 cặp số p1q1,p2q2,p3q3 sao cho: p1 = q2, p2 = q3, p3 = q1
+
 > Tính toán với từng cặp số (c,n), ta được 3 số m1,m2,m3
+
 > Tìm căn bậc 3 của m1*m2*m3, ta có flag
 ```py
 from Crypto.Util.number import long_to_bytes
